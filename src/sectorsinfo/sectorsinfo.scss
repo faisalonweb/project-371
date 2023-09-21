@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+
+  .pointer {
+    cursor: pointer;
+  }
+  .btn {
+    box-shadow: none;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 20px;
+    gap: 7px;
+    width: 210px;
+    background: green;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+
+    &:hover {
+      background: green;
+      box-shadow: none;
+    }
+  }
+
+  .MuiButtonBase-root-MuiCheckbox-root {
+    padding-left: 0px !important;
+  }
+  .MuiFormControlLabel-root .MuiFormControlLabel-label {
+    font-size: 13px;
+    color: gray;
+  }
+
+  .dataGridTable-main {
+    width: 100%;
+    background-color: white;
+    margin-top: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+
+    .view-btn {
+      text-transform: none;
+      border-radius: 12px;
+      width: 70px;
+      height: 34px;
+      background: #ff2f2f;
+      border-radius: 12px;
+      color: white;
+    }
+    .dataGrid {
+      .MuiDataGrid-columnHeaders {
+        background-color: rgba(207, 207, 207, 0.2);
+        border-radius: 12px;
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: -0.011em;
+        border-bottom: none;
+        color: #6c6c6c;
+        &:focus {
+          outline: white;
+        }
+        .css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root {
+          display: none;
+        }
+        .css-t89xny-MuiDataGrid-columnHeaderTitle {
+          margin-left: 25px;
+        }
+      }
+
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.011em;
+      color: #000000;
+      border: white;
+
+      .renderCell-joiningDate {
+        margin-right: auto;
+        .css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+          &:hover {
+            background-color: #cfcfcf;
+          }
+        }
+      }
+    }
+  }
+  .error-border {
+    .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
+      border: 1px solid #d32f2f;
+    }
+  }
+}
